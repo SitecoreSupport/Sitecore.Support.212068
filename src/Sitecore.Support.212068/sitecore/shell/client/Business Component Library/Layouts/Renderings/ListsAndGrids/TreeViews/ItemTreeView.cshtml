@@ -68,7 +68,7 @@
     var rootItemIcon = Images.GetThemedImageSource(!string.IsNullOrEmpty(rootItem.Appearance.Icon) ? rootItem.Appearance.Icon : "Applications/16x16/documents.png", ImageDimension.id16x16);
     #region Modified code
     // The fix: use item name instead of display name
-    userControl.SetAttribute("data-sc-rootitem", rootItem.Name+ "," + rootItem.Database.Name + "," + rootItem.ID + "," + rootItemIcon);
+    userControl.SetAttribute("data-sc-rootitem", rootItem.Name + "," + rootItem.Database.Name + "," + rootItem.ID + "," + rootItemIcon);
     #endregion Modified code
     userControl.SetAttribute("data-sc-rootitempath", rootItem.Paths.Path);
     userControl.SetAttribute("data-sc-loadpath", preLoadPath);
